@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Simba EDU – doučování matematiky, programování, kurzy, 3D tisk a robotika.">
+          content="Simba EDU – individuální doučování matematiky a programování, příprava na přijímací zkoušky a reparáty.">
 
     <title>Simba EDU | Cesta ke vzdělání</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +26,9 @@
 ========================= -->
 
 <nav class="navbar" id="navbar">
-
     <div class="nav-container">
 
-        <a href="#uvod" class="logo">
+        <a href="index.html#hero" class="logo">
             Simba <span>EDU</span>
         </a>
 
@@ -39,88 +39,74 @@
         </button>
 
         <ul class="nav-menu">
+            <li><a href="index.html#hero">Úvod</a></li>
+            
+<li class="dropdown">
+    <a href="#doucovani" class="dropdown-toggle">
+        Doučování <span class="dropdown-arrow">▾</span>
+    </a>
 
-            <li>
-                <a href="#uvod">Úvod</a>
-            </li>
+    <ul class="dropdown-menu">
+        <li><a href="#doucovani">Předměty</a></li>
+        <li><a href="#moznosti-pripravy">Možnosti přípravy</a></li>
+    </ul>
+</li>
 
+            <li><a href="index.html#kurzy">Kurzy a workshopy</a></li>
+            <li><a href="3d-tisk.html">3D tisk</a></li>
+            <li><a href="primestsky-tabor.html">Příměstský tábor</a></li>
+            <li><a href="clenstvi.html">Členství</a></li>
+            <li><a href="index.html#cenik">Ceník</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
             <li>
-                <a href="#doucovani">Doučování</a>
-            </li>
-
-            <li>
-                <a href="#kurzy">Kurzy</a>
-            </li>
-
-            <li>
-                <a href="#technologie">Technologie</a>
-            </li>
-
-            <li>
-                <a href="#tabor">Tábory</a>
-            </li>
-
-            <li>
-                <a href="#cenik">Ceník</a>
-            </li>
-
-            <li>
-                <a href="#rezervace" class="nav-button">
+                <a href="index.html#rezervace" class="nav-button">
                     Rezervace
                 </a>
             </li>
-
         </ul>
 
     </div>
-
 </nav>
-
 
 <!-- =========================
      HERO / ÚVOD
 ========================= -->
 
-<header class="hero" id="uvod">
+<header class="hero" id="hero">
 
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
 
-        <span class="hero-label">
-            MATEMATIKA • PROGRAMOVÁNÍ • TECHNOLOGIE
-        </span>
+    <span class="hero-label">
+        MATEMATIKA • PROGRAMOVÁNÍ • TECHNOLOGIE
+    </span>
 
-        <h1>
-            Simba <span>EDU</span>
-        </h1>
+    <h1>
+        Simba <span>EDU</span>
+    </h1>
 
-        <p class="hero-subtitle">
-            Cesta ke vzdělání, která dává smysl.
-        </p>
+    <p class="hero-subtitle">
+        Cesta ke vzdělání, která dává smysl.
+    </p>
 
-        <p class="hero-text">
-            Doučování, kurzy a praktické workshopy
-            pro děti, studenty i všechny, kteří se chtějí
-            naučit něco nového.
-        </p>
+    <p class="hero-text">
+        Doučování, kurzy a praktické workshopy pro děti, studenty i všechny, kteří se chtějí naučit něco nového.
+    </p>
 
-        <div class="hero-buttons">
+    <div class="hero-buttons">
+        <a href="#doucovani" class="btn btn-primary">
+            Vybrat doučování
+        </a>
 
-            <a href="#doucovani" class="btn btn-primary">
-                Chci doučování
-            </a>
-
-            <a href="#kurzy" class="btn btn-secondary">
-                Prohlédnout kurzy
-            </a>
-
-        </div>
-
+        <a href="#kurzy" class="btn btn-secondary">
+            Objevit workshopy
+        </a>
     </div>
 
-</header>
+</div>
 
+</header>
 
 <!-- =========================
      DOUČOVÁNÍ
@@ -135,18 +121,20 @@
         </span>
 
         <h2>
-            Doučování
+            Doučování matematiky <br>a programování
         </h2>
 
         <p>
-            Individuální přístup, srozumitelné vysvětlení
-            a důraz na to, aby student látce skutečně rozuměl.
+            Vyberte si předmět a potom konkrétní typ přípravy.
         </p>
 
     </div>
-
+    <div class="spolecneuceni" aria-label="Fotografie Kristýny Chaloupkové">
+            <img src="spolecneuceni.png" alt="Kristýna Chaloupková na školení nebo workshopu" loading="lazy">
+        </div>
 
     <div class="cards">
+
 
         <!-- MATEMATIKA -->
 
@@ -160,23 +148,24 @@
                 Matematika
             </h3>
 
-            <p>
-                Pomoc s běžným učivem, přijímacími zkouškami, přípravou na maturitu a další úrovně.
+            <p>Společně přijdeme na to, co v matematice drhne, doplníme mezery 
+                a postupně získáme jistotu i u složitějších příkladů. 
             </p>
 
+            
+
             <ul class="card-list">
-                <li>Individuální doučování</li>
-                 <li>Skupinová výuka</li>
-                <li>Přijímací zkoušky</li>
-                <li>Maturita</li>
+                <li>Průběžná příprava na testy a písemky</li>
+                <li>Příprava na přijímací zkoušky a maturitu</li>
+                <li>Příprava na reparáty a opravné zkoušky</li>
+                <li>Opakování učiva a doplnění mezer v základech</li>
             </ul>
 
-            <a href="#rezervace" class="card-link">
-                Chci matematiku →
+            <a href="matematika.html" class="card-link">
+                Více o doučování matematiky ->
             </a>
 
         </article>
-
 
         <!-- PROGRAMOVÁNÍ -->
 
@@ -191,8 +180,9 @@
             </h3>
 
             <p>
-                Programování prakticky a srozumitelně.
-                Od základů až po zajímavé projekty.
+                Programování s důrazem na pochopení souvislostí.<br>
+                Pomoc s učivem, úlohami i vlastními projekty.
+            
             </p>
 
             <ul class="card-list">
@@ -202,16 +192,44 @@
                 <li>JavaScript</li>
             </ul>
 
-            <a href="#rezervace" class="card-link">
-                Chci programování →
+            <a href="programovani.html" class="card-link">
+                Více o programování ->
             </a>
 
         </article>
 
     </div>
 
-</section>
+    <div class="prep-heading" id="moznosti-pripravy">
+        <span class="section-label">VYBERTE SI CÍL</span>
+        <h3>Možnosti přípravy</h3>
+        <p>Každá situace je trochu jiná. Vyberte si, co právě potřebujete řešit.</p>
+    </div>
 
+    <div class="prep-cards">
+        <article class="prep-card">
+            <div class="prep-card-icon" aria-hidden="true">01</div>
+            <h3>Pravidelné doučování</h3>
+            <p>Průběžná pomoc s učivem, vysvětlení nejasností a postupné budování jistoty v matematice nebo programování.</p>
+            <a href="klasicke-doucovani.html" class="card-link">Více o pravidelném doučování →</a>
+        </article>
+
+        <article class="prep-card">
+            <div class="prep-card-icon" aria-hidden="true">02</div>
+            <h3>Přijímací zkoušky</h3>
+            <p>Cílená příprava z matematiky, procvičování typových úloh a promyšlený postup při řešení.</p>
+            <a href="prijimaci-zkousky.html" class="card-link">Více o přípravě na přijímačky →</a>
+        </article>
+
+        <article class="prep-card">
+            <div class="prep-card-icon" aria-hidden="true">03</div>
+            <h3>Reparát</h3>
+            <p>Soustředěná příprava na opravnou zkoušku a procvičení témat, ve kterých je potřeba získat jistotu.</p>
+            <a href="reparat.html" class="card-link">Více o přípravě na reparát →</a>
+        </article>
+    </div>
+
+</section>
 
 <!-- =========================
      KURZY
@@ -219,113 +237,209 @@
 
 <section class="section section-light" id="kurzy">
 
-    <div class="section-heading">
+ <div class="section-heading">
 
-        <span class="section-label">
-            UČÍME JINAK
-        </span>
+    <span class="section-label">UČÍME JINAK</span>
+    <span class="coming-soon">PŘIPRAVUJEME · JARO 2027</span>
 
-        <h2>
-            Kurzy a workshopy
-        </h2>
+    <h2>Kurzy a workshopy</h2>
 
+    <p>
+        Praktické vzdělávání, při kterém se věci nejen vysvětlují,
+        ale především zkoušejí, objevují a tvoří.<br>
+    </p>
+
+    
+
+</div>
+
+<div class="feature-grid">
+
+    <article class="feature">
+        <div class="feature-number" aria-hidden="true">
+    <icon name="code-2" size="2xl" />
+</div>
+        <h3>Programování</h3>
         <p>
-            Propojujeme vzdělávání s praxí,
-            technikou a tvořením.
+            Praktické programování, logické úlohy a vlastní projekty.
+            Cílem je porozumět principům a vytvořit něco vlastního.
         </p>
+    </article>
 
+    <article class="feature">
+        <div class="feature-number" aria-hidden="true">
+    <icon name="bot" size="2xl" />
+</div>
+        <h3>Robotika</h3>
+        <p>
+            Propojení programování, techniky a řešení praktických
+            problémů prostřednictvím tvoření a experimentování.
+        </p>
+    </article>
+
+</div>
+
+<div class="prep-heading">
+    <span class="section-label">PRAKTICKÉ WORKSHOPY</span>
+    <h3>Co připravujeme?</h3>
+    <p>
+        Workshopy zaměřené na dovednosti, které se hodí ve škole,
+        v každodenním životě i při práci s technologiemi.
+    </p>
+</div>
+
+<div class="prep-cards">
+
+    <article class="prep-card">
+    <img
+        src="images/kriticke-mysleni.png"
+        alt="Ilustrace kritického myšlení"
+        class="workshop-image"
+    >
+
+    <div class="prep-card-icon" aria-hidden="true">
+        ...
     </div>
+        <div class="prep-card-icon" aria-hidden="true"><div class="prep-card-icon" aria-hidden="true"><icon name="search" size="xl" /></div></div>
+        <span class="coming-soon">PŘIPRAVUJEME</span>
+        <h3>Kritické myšlení: Nenech se napálit</h3>
+        <p><strong>90 min · studenti a učitelé</strong></p>
+        <p>
+            Jak ověřovat informace, posuzovat důvěryhodnost zdrojů
+            a rozpoznat manipulaci?
+        </p>
+    </article>
 
+    <article class="prep-card">
+    <img
+        src="images/programovani-hry.png"
+        alt="Ilustrace programovani hry"
+        class="workshop-image"
+    >
 
-    <div class="feature-grid">
-
-        <article class="feature">
-
-            <div class="feature-number">
-                01
-            </div>
-
-            <h3>
-                Matematické kurzy
-            </h3>
-
-            <p>
-                Tematické kurzy zaměřené na konkrétní
-                oblasti matematiky a přípravu na zkoušky.
-            </p>
-
-        </article>
-
-
-        <article class="feature">
-
-            <div class="feature-number">
-                02
-            </div>
-
-            <h3>
-                Programování
-            </h3>
-
-            <p>
-                Praktické programovací workshopy
-                pro začátečníky i pokročilé.
-            </p>
-
-        </article>
-
-
-        <article class="feature">
-
-            <div class="feature-number">
-                03
-            </div>
-
-            <h3>
-                Robotika
-            </h3>
-
-            <p>
-                Programování, elektronika a robotika
-                propojené s praktickými úkoly.
-            </p>
-
-        </article>
-
+    <div class="prep-card-icon" aria-hidden="true">
+        ...
     </div>
+        <div class="prep-card-icon" aria-hidden="true"><div class="prep-card-icon" aria-hidden="true"><icon name="gamepad-2" size="xl" /></div></div>
+        <span class="coming-soon">PŘIPRAVUJEME</span>
+        <h3>Naprogramuj svou první hru</h3>
+        <p><strong>120 min · začátečníci, děti a dospívající</strong></p>
+        <p>
+            Od nápadu k vlastní minihře. Vyzkoušíme si pravidla,
+            podmínky, proměnné, bodování i hledání chyb
+            v programu.
+        </p>
+    </article>
+
+    <article class="prep-card">
+    <img
+        src="images/ai-uceni.png"
+        alt="Ilustrace ai uceni"
+        class="workshop-image"
+    >
+
+    <div class="prep-card-icon" aria-hidden="true">
+        ...
+    </div>
+        <div class="prep-card-icon" aria-hidden="true"><div class="prep-card-icon" aria-hidden="true"><icon name="brain-circuit" size="xl" /></div></div>
+        <span class="coming-soon">PŘIPRAVUJEME</span>
+        <h3>Jak se AI učí a proč dělá chyby</h3>
+        <p><strong>90 min · studenti a učitelé</strong></p>
+        <p>
+            Co se skrývá za strojovým učením, jakou roli hrají
+            trénovací data a proč může umělá inteligence chybovat?
+           
+        </p>
+    </article>
+
+    <article class="prep-card">
+    <img
+        src="images/bezpecnost-online.png"
+        alt="Ilustrace bezpecnost online"
+        class="workshop-image"
+    >
+
+    <div class="prep-card-icon" aria-hidden="true">
+        ...
+    </div>
+        <div class="prep-card-icon" aria-hidden="true"><div class="prep-card-icon" aria-hidden="true"><icon name="shield-check" size="xl" /></div></div>
+        <span class="coming-soon">PŘIPRAVUJEME</span>
+        <h3>Bezpečně online: Chraň svá data i své účty</h3>
+        <p><strong>90 min · studenti, rodiče a učitelé</strong></p>
+        <p>
+            Hesla, dvoufázové ověření, phishing, soukromí,
+            oprávnění aplikací a digitální stopa.
+        </p>
+    </article>
+
+    <article class="prep-card">
+    <img
+        src="images/digitalni-wellbeing.png"
+        alt="Ilustrace digitálního wellbeingu"
+        class="workshop-image"
+    >
+
+    <div class="prep-card-icon" aria-hidden="true">
+        ...
+    </div>
+        <div class="prep-card-icon" aria-hidden="true"><div class="prep-card-icon" aria-hidden="true"><icon name="heart-pulse" size="xl" /></div></div>
+        <span class="coming-soon">PŘIPRAVUJEME</span>
+        <h3>Digitální wellbeing: Měj technologie pod kontrolou</h3>
+        <p><strong>90 min · studenti, rodiče a učitelé</strong></p>
+        <p>
+            Pozornost, notifikace, návykové mechanismy aplikací,
+            spánek a soustředění při učení.
+        </p>
+    </article>
+
+</div>
+
+<div class="section-heading">
+    <p>
+        <br>
+        Máte zájem o některý z připravovaných workshopů
+        pro školu, skupinu nebo jednotlivce?
+        <br>
+        <br>
+    </p>
+
+    <a href="kontakt.html" class="btn btn-primary">
+        Nezávazně projevit zájem
+    </a>
+</div>
 
 </section>
 
-
 <!-- =========================
-     TECHNOLOGIE
+     3D TISK
 ========================= -->
 
 <section class="technology" id="technologie">
 
     <div class="technology-content">
+         <span class="coming-soon">PŘIPRAVUJEME</span>
 
-        <span class="section-label">
-            TECHNOLOGIE
-        </span>
+        <span class="section-label">TVORBA A TECHNOLOGIE</span>
 
-        <h2>
-            3D tisk & technologie
-        </h2>
+        <h2>3D tisk: Od nápadu k vlastnímu modelu</h2>
 
         <p>
-            Technologie nejsou jen něco, o čem se učíme.
-            Jsou nástrojem, pomocí kterého můžeme tvořit,
-            experimentovat a řešit skutečné problémy.
+            Jak se digitální návrh promění ve skutečný předmět?
+            3D tisk propojuje kreativitu, prostorovou představivost
+            a moderní technologie. Připravujeme možnosti, jak tuto
+            technologii poznat blíže a vyzkoušet si její využití v praxi.
         </p>
 
-        <div class="technology-items">
+       
 
-            <span>3D tisk</span>
-            <span>Robotika</span>
-            <span>Programování</span>
-            <span>Projekty</span>
+        <div class="hero-buttons">
+            <a href="3d-tisk.html" class="btn btn-primary">
+                Více o 3D tisku
+            </a>
 
+            <a href="kontakt.html" class="btn btn-secondary">
+                Nezávazně projevit zájem 
+            </a>
         </div>
 
     </div>
@@ -334,105 +448,118 @@
 
 
 <!-- =========================
-     PŘÍMĚSTSKÉ TÁBORY
+     PŘÍMĚSTSKÝ TÁBOR
 ========================= -->
 
 <section class="section" id="tabor">
 
     <div class="section-heading">
 
-        <span class="section-label">
-            PRO DĚTI
-        </span>
+        <span class="section-label">PRO DĚTI</span>
 
-        <h2>
-            Příměstské tábory
-        </h2>
+        <h2>Příměstský tábor</h2>
 
         <p>
-            Připravujeme program plný tvoření, pohybu a zábavy.
+            Prostor pro nové zážitky, tvoření, objevování
+            a společně strávený čas.
         </p>
 
     </div>
-
 
     <div class="camp-box">
 
         <div class="camp-content">
 
             <span class="coming-soon">
-                PŘIPRAVUJEME
+                PŘIPRAVUJEME · LÉTO 2027
             </span>
 
-            <h3>
-                Technologie, které baví
-            </h3>
+            <h3>Nové zážitky už se chystají</h3>
 
             <p>
-                Podrobnosti o připravovaných
-                příměstských táborech zveřejníme brzy.
+                Připravujeme první příměstský tábor Simba EDU.
+                Podrobnosti o programu, termínu a přihlášení
+                zveřejníme postupně.
             </p>
 
-           <!-- <a href="#rezervace" class="btn btn-primary">
-                Chci vědět více →
+             <a href="primestsky-tabor.html" class="btn btn-primary">
+                Více o příměstském táboře
             </a>
--->
+
+            <a href="kontakt.html" class="btn btn-secondary">
+                Nezávazně projevit zájem 
+            </a>
+
         </div>
 
     </div>
 
 </section>
 
-
 <!-- =========================
-     O MNĚ
+     O MNĚ / ÚVODNÍ PŘEDSTAVENÍ
 ========================= -->
 
 <section class="about section-light" id="o-mne">
 
     <div class="about-container">
 
-        <div class="about-photo">
-
-            <div class="photo-placeholder">
-
-            </div>
-
+        <div class="about-heading">
+            <span class="section-label">KDO STOJÍ ZA SIMBA EDU</span>
+            <h2>Vzdělávání, které má smysl.</h2>
+            <p class="about-intro">Matematika, programování a technologie — s lidským přístupem, zvídavostí a chutí hledat vlastní cestu.</p>
         </div>
 
-
-        <div class="about-content">
-
-            <span class="section-label">
-                KDO JE SIMBA EDU
-            </span>
-
-            <h2>
-                Vzdělávání, které má smysl.
-            </h2>
-
-            <p>
-                Simba EDU vzniká s cílem propojit
-                matematiku, programování a moderní technologie
-                s praktickým a lidským přístupem ke vzdělávání.
-            </p>
-
-            <p>
-                Nejde jen o to znát správný výsledek.
-                Důležité je pochopit, <strong>proč</strong>
-                k němu člověk došel.
-            </p>
-
-            <a href="#rezervace" class="text-link">
-                Chci využít některé ze služeb →
-            </a>
-
+        <div class="about-gallery" aria-label="Fotografie Kristýny Chaloupkové">
+            <img src="kristyna-1.jpg" alt="Kristýna Chaloupková – portrét" loading="lazy">
+            <img src="kristyna-2.jpg" alt="Kristýna Chaloupková při vzdělávací činnosti" loading="lazy">
+            <img src="kristyna-3.jpg" alt="Kristýna Chaloupková při práci s technologiemi" loading="lazy">
+            <img src="kristyna-4.jpg" alt="Kristýna Chaloupková na školení nebo workshopu" loading="lazy">
         </div>
+
+        <div class="about-story">
+    <div class="about-portrait">
+        <img src="kristyna-5.jpg" alt="Kristýna Chaloupková">
+    </div>
+
+    <article class="about-content">
+            <p>Jmenuji se Kristýna Chaloupková a jsem učitelka matematiky, programování a informatiky. Učitelství je pro mě mnohem víc než povolání. Je to práce, která mě nutí hledat nové cesty, zkoušet neotřelé nápady a občas také posouvat vlastní hranice. A přesně to mě na ní baví.</p>
+
+            <p>Za osm let ve školství jsem prošla soukromou i státní základní školou a střední školou. Učila jsem matematiku, přírodní vědy, informatiku i programování, vedla třídní kolektivy, matematický a robotický kroužek a působila jako koordinátorka ICT.</p>
+
+            <p>Jako členka AI týmu na střední škole jsem se věnovala rozvoji digitálních kompetencí učitelů i žáků. Pořádala jsem školení a workshopy zaměřené na nové technologie a umělou inteligenci, a to i na Úřadu městské části Brno-Komín.</p>
+
+            <p>Za velmi povedenou akci považuji spoluorganizaci soutěže v programování dronů pro žáky, kterou doplnil workshop pro učitele zaměřený na využití digitálních technologií ve výuce.</p>
+
+            <p>Moje cesta ke školství přitom nebyla úplně přímočará. Vystudovala jsem dvě vysoké školy, přičemž právě pedagogické vzdělání mi dalo základ, na kterém dnes stavím. Druhé studium mi rozšířilo obzory a potvrdilo, že člověk nemusí jít od začátku po jediné, předem nalinkované cestě.</p>
+
+            <p>Jsem srdcař. Když mě něco chytne, obvykle tomu věnuji víc energie, než by bylo z čistě praktického hlediska nezbytné. Ve školství to znamená hledat způsoby, jak žákům učivo přiblížit, jak je motivovat a jak jim pomoct objevit, že dokážou víc, než si sami mysleli.</p>
+
+            <p>Umím být náročná. Když vidím snahu a prostor k posunu, ráda žáky povzbuzuji k tomu, aby ze sebe dostali maximum. Ne proto, že každý musí být nejlepší ve třídě, ale protože každý má právo dostat příležitost posunout se dál – svým vlastním tempem.</p>
+
+            <p>A co mě těší nejvíc? Momenty, kdy žák najednou pochopí něco, s čím si ještě před chvílí nevěděl rady. Když přestane jen hádat, začne si věřit a dokáže vlastními slovy vysvětlit, proč jeho řešení funguje. Takové chvíle jsou pro mě mnohem cennější než bezchybný výsledek v testu.</p>
+
+            <h3>Proč vzniklo Simba EDU?</h3>
+
+            <p>Simba EDU vzniklo z touhy vytvářet prostor, kde vzdělávání nekončí u známek, splněných úkolů a správných odpovědí. Kde má smysl ptát se, dělat chyby, hledat jiné cesty a postupně přicházet věcem na kloub.</p>
+
+            <p>Matematika nás učí hledat souvislosti. Programování nás nutí rozdělit problém na menší části, přemýšlet systematicky a nevzdat to při první chybě. Technologie nám zase otevírají možnosti, které stojí za to objevovat – s nadšením, ale také s rozumem a kritickým odstupem.</p>
+
+            <p>Právě tyto oblasti chci v Simba EDU propojovat. Od individuálního doučování přes skupinové kurzy až po nové vzdělávací aktivity, které budou postupně vznikat.</p>
+
+            <p>Nechci slibovat, že se každý předmět stane jeho nejoblíbenějším koníčkem. Chci ale, aby měl každý možnost látce lépe porozumět, zažít vlastní pokrok a zjistit, že cesta k výsledku nemusí být vždycky snadná, aby stála za to.</p>
+
+            <blockquote class="about-quote">Věřím, že dobré vzdělávání nezačíná hotovou odpovědí. Začíná ve chvíli, kdy člověk dostane chuť hledat ji sám.</blockquote>
+
+            <p class="about-closing">A přesně takové místo bych chtěla se Simba EDU budovat.</p>
+
+            <a href="#rezervace" class="text-link">Chci využít některé ze služeb →</a>
+        </article>
+</div>
 
     </div>
 
 </section>
-
 
 <!-- =========================
      CENÍK
@@ -457,7 +584,6 @@
 
     </div>
 
-
     <div class="price-cards">
 
         <article class="price-card">
@@ -476,39 +602,33 @@
                 Výuka přizpůsobená konkrétnímu studentovi.
             </p>
 
-            <a href="#rezervace" class="btn btn-primary">
-                Rezervovat
-            </a>
+            <a href="priprava.html" class="btn btn-primary">
+    Podrobnosti a rezervace
+</a>
+            
 
         </article>
 
-
         <article class="price-card featured">
 
-            <div class="popular">
-                NEJOBLÍBENĚJŠÍ
-            </div>
-
             <h3>
-                Příprava na zkoušky
+                Příprava na přijímací zkoušky
             </h3>
 
             <div class="price">
-                2500 Kč
+                2 500 Kč
                 <span>/ 10 lekcí</span>
             </div>
 
             <p>
-                Balíček intenzivní přípravy na přijímačky,
-                maturitu nebo důležitý test.
+                Cílená příprava na přijímací zkoušky z matematiky.
             </p>
 
-            <a href="#rezervace" class="btn btn-primary">
-                Rezervovat
-            </a>
+           <a href="priprava.html" class="btn btn-primary">
+    Podrobnosti a rezervace
+</a>
 
         </article>
-
 
         <article class="price-card">
 
@@ -522,19 +642,18 @@
             </div>
 
             <p>
-                Výhodnější varianta pro malé skupiny pro 3 - 6 osob.
+                Výhodnější varianta pro malé skupiny o 3–5 osobách.
             </p>
 
-            <a href="#rezervace" class="btn btn-primary">
-                Mám zájem
-            </a>
+            <a href="priprava.html" class="btn btn-primary">
+    Podrobnosti a rezervace
+</a>
 
         </article>
 
     </div>
 
 </section>
-
 
 <!-- =========================
      REZERVACE
@@ -558,9 +677,7 @@
         </p>
 
     </div>
-
-
-    <form
+<form
   id="kontaktForm"
   class="contact-form"
   action="https://formspree.io/f/xyekyanp"
@@ -585,7 +702,6 @@
 
             </div>
 
-
             <div class="form-group">
 
                 <label for="email">
@@ -603,7 +719,6 @@
             </div>
 
         </div>
-
 
         <div class="form-group">
 
@@ -625,6 +740,18 @@
                     Programování
                 </option>
 
+                <option value="klasicke_doucovani">
+                    Pravidelné doučování
+                </option>
+
+                <option value="prijimaci_zkousky">
+                    Příprava na přijímací zkoušky
+                </option>
+
+                <option value="reparat">
+                    Příprava na reparát
+                </option>
+
                 <option value="kurz">
                     Kurz / workshop
                 </option>
@@ -640,7 +767,6 @@
             </select>
 
         </div>
-
 
         <div class="form-group">
 
@@ -658,7 +784,6 @@
 
         </div>
 
-
         <button type="submit" class="btn btn-primary form-button">
             Odeslat nezávaznou poptávku
         </button>
@@ -666,9 +791,49 @@
         <p id="formMessage"></p>
 
     </form>
+    <!-- PŘÍMÝ KONTAKT -->
+    <div class="contact-options" aria-label="Kontaktní údaje Simba EDU">
+         <a class="contact-option" href="tel:+420731105930">
+            <span class="contact-option-icon">
+    <img src="telefon.png" alt="">
+</span>
+            <span class="contact-option-label">Telefon</span>
+            <span class="contact-option-value">+420 731 105 930</span>
+        </a>
+
+        <a class="contact-option" href="mailto:info.simbaedu@gmail.com">
+            <span class="contact-option-icon">
+    <img src="email.png" alt="">
+</span>
+            <span class="contact-option-label">E-mail</span>
+            <span class="contact-option-value">info.simbaedu@gmail.com</span>
+        </a>
+
+        <a class="contact-option"
+           href="https://www.facebook.com/share/1Duo6jnE8x/"
+           target="_blank" rel="noopener noreferrer">
+            <span class="contact-option-icon">
+    <img src="facebook.png" alt="">
+</span>
+
+            <span class="contact-option-label">Facebook</span>
+            <span class="contact-option-value">Sledujte Simba EDU</span>
+        </a>
+
+        <a class="contact-option"
+           href="https://www.instagram.com/_simbaedu_?dlrf=MTBveXZ5b2E4bDJjNQ=="
+           target="_blank" rel="noopener noreferrer">
+           <span class="contact-option-icon">
+    <img src="instagram.png" alt="">
+</span>
+            <span class="contact-option-label">Instagram</span>
+            <span class="contact-option-value">Sledujte Simba EDU</span>
+        </a>
+    </div>
+
+    
 
 </section>
-
 
 <!-- =========================
      FOOTER
@@ -690,10 +855,9 @@
 
         </div>
 
-
         <div class="footer-links">
 
-            <a href="#uvod">Úvod</a>
+            <a href="#o-mne">Úvod</a>
             <a href="#doucovani">Doučování</a>
             <a href="#kurzy">Kurzy</a>
             <a href="#technologie">Technologie</a>
@@ -703,7 +867,6 @@
         </div>
 
     </div>
-
 
     <div class="footer-bottom">
 
@@ -715,7 +878,17 @@
 
 </footer>
 
-
+<script>
+(function () {
+    const params = new URLSearchParams(window.location.search);
+    const requestedService = params.get("sluzba");
+    const serviceSelect = document.getElementById("sluzba");
+    if (requestedService && serviceSelect) {
+        const matchingOption = Array.from(serviceSelect.options).find(option => option.value === requestedService);
+        if (matchingOption) serviceSelect.value = requestedService;
+    }
+})();
+</script>
 <script src="script.js"></script>
 
 </body>
