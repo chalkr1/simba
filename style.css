@@ -2337,24 +2337,27 @@ html {
     gap: 24px;
 }
 
+
 .prep-cards .prep-card {
     min-width: 0;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    padding: clamp(20px, 2.5vw, 32px);
+    aspect-ratio: auto;
+    min-height: 390px;
+    padding: 28px 32px;
     box-sizing: border-box;
     background: #fff;
     border: 1px solid rgba(13, 53, 87, 0.08);
-    border-radius: 50%;
+    border-radius: 24px;
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     text-align: center;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
+
 
 .prep-card-icon {
     display: none !important;
@@ -2441,4 +2444,52 @@ html {
         font-size: 0.9rem;
         line-height: 1.5;
     }
+}
+
+/* =========================================
+   MOŽNOSTI PŘÍPRAVY – KOMPAKTNÍ KARTY
+   Pouze stránka prep-options-page
+========================================= */
+
+body.prep-options-page .prep-cards {
+    max-width: 1000px;
+    gap: 20px;
+    align-items: start;
+    grid-template-rows: auto;
+}
+body.prep-options-page .prep-cards .prep-card {
+    
+    aspect-ratio: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 16px 24px !important;
+    gap: 8px !important;
+    justify-content: flex-start !important;
+    border-radius: 20px !important;
+    align-self: start !important;
+}
+
+body.prep-options-page .prep-card h3 {
+    margin: 0;
+}
+
+body.prep-options-page .prep-card p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+body.prep-options-page .prep-card .card-link {
+    margin-top: 4px;
+    
+}
+
+#moznosti-pripravy + .prep-cards .prep-card {
+    min-height: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+    gap: 8px;
+}
+#moznosti-pripravy + .prep-cards .prep-card .card-link {
+    margin-top: auto;
 }
