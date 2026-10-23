@@ -1314,43 +1314,57 @@ textarea {
 }
 
 /* Mobil */
-/* Mobil */
+/* Mobil – workshopy */
 @media (max-width: 560px) {
     .prep-cards {
         grid-template-columns: 1fr;
         gap: 20px;
-        padding: 0 12px;
+        padding: 0 16px;
+        box-sizing: border-box;
     }
 
     .prep-card {
         width: 100%;
         max-width: 380px;
-        min-width: 0;
         aspect-ratio: auto;
         border-radius: 24px;
-        justify-self: center;
         padding: 28px 22px;
         box-sizing: border-box;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
+        justify-self: center;
+        gap: 12px;
+    }
+
+    .prep-card .workshop-image {
+        width: 100%;
+        max-width: 120px;
+        height: auto;
+        flex-shrink: 0;
     }
 
     .prep-card h3 {
         width: 100%;
-        max-width: 100%;
         font-size: 1.1rem;
         line-height: 1.35;
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
         hyphens: auto;
     }
 
     .prep-card p {
-        max-width: 100%;
-        overflow-wrap: anywhere;
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        overflow-wrap: break-word;
     }
 
-    .prep-card .workshop-image {
-        max-width: 130px;
+    .prep-card .coming-soon {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .prep-card .card-link {
+        max-width: 100%;
+        white-space: normal;
+        overflow-wrap: anywhere;
     }
 }
 
@@ -1804,11 +1818,12 @@ textarea {
 }
 
 .spolecneuceni img {
-    width: 200%;
+    width: 100%;
     max-width: 700px;
     height: auto;
     display: block;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
