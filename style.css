@@ -1314,16 +1314,43 @@ textarea {
 }
 
 /* Mobil */
+/* Mobil */
 @media (max-width: 560px) {
     .prep-cards {
         grid-template-columns: 1fr;
         gap: 20px;
+        padding: 0 12px;
     }
 
     .prep-card {
-        width: min(100%, 340px);
+        width: 100%;
+        max-width: 380px;
+        min-width: 0;
+        aspect-ratio: auto;
+        border-radius: 24px;
         justify-self: center;
-        padding: 32px;
+        padding: 28px 22px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .prep-card h3 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.1rem;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+        hyphens: auto;
+    }
+
+    .prep-card p {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .prep-card .workshop-image {
+        max-width: 130px;
     }
 }
 
@@ -2433,3 +2460,13 @@ html {
     color: var(--text-color);
     opacity: 0.8;
 }
+
+.prep-card .workshop-image {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
