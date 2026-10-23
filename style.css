@@ -2493,3 +2493,19 @@ body.prep-options-page .prep-card .card-link {
 #moznosti-pripravy + .prep-cards .prep-card .card-link {
     margin-top: auto;
 }
+
+#moznosti-pripravy + .prep-cards .prep-card .card-link {
+    margin-top: auto;
+    align-self: center;
+    text-align: center;
+}
+
+#moznosti-pripravy + .prep-cards .prep-card .card-link {
+    margin-top: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center !important;
+    display: block;
+    width: fit-content;
+    text-align: center;
+}
